@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:text="First Turn: X"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/btn1A"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/btn2A"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/btn3A"
+                style="@style/column" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/btn1B"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/btn2B"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/btn3B"
+                style="@style/column" />
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine" />
+
+        <LinearLayout style="@style/row">
+
+            <Button
+                android:id="@+id/btn1C"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/btn2C"
+                style="@style/column" />
+
+            <View style="@style/verticalLine" />
+
+            <Button
+                android:id="@+id/btn3C"
+                style="@style/column" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtVersionNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/versionNum"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtRandomMessage"
+        android:layout_width="329dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="28dp"
+        android:text="@string/randomMessage"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txtDeonMessage"
+        android:layout_width="335dp"
+        android:layout_height="73dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginBottom="100dp"
+        android:text="@string/deonMessage"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
